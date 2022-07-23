@@ -12,7 +12,7 @@ type Props = RCProps<
   }>
 >;
 
-export const View = ({ title, children }: Props) => {
+export const View = ({ children }: Props) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const onClose = () => {
@@ -30,13 +30,11 @@ export const View = ({ title, children }: Props) => {
         <Header onOpenSidebar={onOpen} />
         <main
           className={clsxm(
-            'min-h-[calc(100vh-60px)] flex flex-1 flex-col p-8',
+            'min-h-[calc(100vh-60px)]',
+            ' flex flex-1 flex-col',
             "bg-no-repeat bg-bottom bg-[url('/img/hero.svg')]"
           )}
         >
-          {title && (
-            <h1 className='text-gray-700 text-3xl font-bold my-8'>{title}</h1>
-          )}
           {children}
         </main>
         <Footer />
