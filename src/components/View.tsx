@@ -2,9 +2,7 @@ import { useState } from 'react';
 
 import clsxm from '@/lib/clsxm';
 
-import { Footer } from './Footer';
-import { Header } from './Header';
-import { Sidebar } from './Sidebar';
+import { Footer, Header, Sidebar } from '@/components/layout';
 
 import { RCProps } from '@/types';
 

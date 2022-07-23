@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { MenuIcon } from '@/components/icons/MenuIcon';
+
 import { routes } from '@/router.settings';
 
-import { MenuIcon } from './icons/MenuIcon';
 import { Nav } from './Nav';
 
 import { RCProps } from '@/types';

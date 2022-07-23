@@ -1,6 +1,7 @@
 import clsxm from '@/lib/clsxm';
 
-import { XIcon } from './icons/XIcon';
+import { XIcon } from '@/components/icons/XIcon';
+
 import { Nav } from './Nav';
 
 import { RCProps } from '@/types';

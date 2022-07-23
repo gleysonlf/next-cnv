@@ -3,16 +3,4 @@ export const routes = {
     path: '/',
     name: 'Home',
   },
-  CHARACTERS: {
-    path: '/characters',
-    name: 'Characters',
-  },
-  LOCATIONS: {
-    path: '/locations',
-    name: 'locations',
-  },
-  EPISODES: {
-    path: '/episodes',
-    name: 'Episodes',
-  },
 };
