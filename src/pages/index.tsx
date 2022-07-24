@@ -9,8 +9,7 @@ import {
 
 import clsxm from '@/lib/clsxm';
 
-import NextImage from '@/components/NextImage';
-import { NextLink } from '@/components/NextLink';
+import { NextImage, NextLink } from '@/components';
 import { View } from '@/components/View';
 
 const HomePage = () => {
@@ -278,8 +277,13 @@ const SectionContact = () => (
                 </label>
                 <input
                   type='text'
-                  className='border-0 px-3 py-3 placeholder-slate-500 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150'
                   placeholder='Como prefere ser chamado(a)'
+                  className={clsxm(
+                    'w-full border-0 px-3 py-3  rounded text-sm shadow',
+                    'bg-white placeholder-slate-500 text-slate-600',
+                    'ease-linear transition-all duration-150',
+                    'focus:outline-none focus:ring focus:ring-orange-300'
+                  )}
                 />
               </div>
               <div className='relative w-full mb-3'>
@@ -291,8 +295,13 @@ const SectionContact = () => (
                 </label>
                 <input
                   type='email'
-                  className='border-0 px-3 py-3 placeholder-slate-500 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150'
                   placeholder='Qual seu e-mail pra contato'
+                  className={clsxm(
+                    'w-full border-0 px-3 py-3  rounded text-sm shadow',
+                    'bg-white placeholder-slate-500 text-slate-600',
+                    'ease-linear transition-all duration-150',
+                    'focus:outline-none focus:ring focus:ring-orange-300'
+                  )}
                 />
               </div>
               <div className='relative w-full mb-3'>
@@ -305,8 +314,13 @@ const SectionContact = () => (
                 <textarea
                   rows={4}
                   cols={80}
-                  className='border-0 px-3 py-3 placeholder-slate-500 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full'
                   placeholder='Escreva aqui sua mensagem...'
+                  className={clsxm(
+                    'w-full border-0 px-3 py-3  rounded text-sm shadow',
+                    'bg-white placeholder-slate-500 text-slate-600',
+                    'ease-linear transition-all duration-150',
+                    'focus:outline-none focus:ring focus:ring-orange-300'
+                  )}
                 />
               </div>
               <div className='text-center mt-6'>

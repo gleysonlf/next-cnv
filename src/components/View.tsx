@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import clsxm from '@/lib/clsxm';
 
-import { Footer, Header, Sidebar } from '@/components/layout';
+import { Footer, Header } from '@/components/layout';
 
 import { RCProps } from '@/types';
 
@@ -25,9 +25,8 @@ export const View = ({ children }: Props) => {
 
   return (
     <div className='flex overflow-x-hidden text-gray-700'>
-      <Sidebar isOpen={isOpen} onClose={onClose} />
       <div className='flex flex-1 flex-col'>
-        <Header onOpenSidebar={onOpen} />
+        <Header />
         <main
           className={clsxm(
             'min-h-[calc(100vh-60px)]',
