@@ -24,7 +24,7 @@ export const View = ({ children }: Props) => {
   };
 
   return (
-    <div className='flex overflow-x-hidden'>
+    <div className='flex overflow-x-hidden text-gray-700'>
       <Sidebar isOpen={isOpen} onClose={onClose} />
       <div className='flex flex-1 flex-col'>
         <Header onOpenSidebar={onOpen} />

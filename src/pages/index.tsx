@@ -1,7 +1,15 @@
-import { ArrowSquareOut, ChatsCircle, Target } from 'phosphor-react';
+import {
+  ArrowSquareOut,
+  ChatsCircle,
+  FacebookLogo,
+  InstagramLogo,
+  Target,
+  TwitterLogo,
+} from 'phosphor-react';
 
 import clsxm from '@/lib/clsxm';
 
+import NextImage from '@/components/NextImage';
 import { NextLink } from '@/components/NextLink';
 import { View } from '@/components/View';
 
@@ -9,12 +17,148 @@ const HomePage = () => {
   return (
     <View>
       <div className='flex w-full h-full flex-col items-center justify-center'>
+        <SectionTeam />
         <SectionAbout />
         <SectionContact />
       </div>
     </View>
   );
 };
+
+const SectionTeam = () => (
+  <section className='pt-20 pb-48'>
+    <div className='container mx-auto px-4'>
+      <div className='flex flex-wrap justify-center text-center mb-24'>
+        <div className='w-full lg:w-6/12 px-4'>
+          <h2 className='text-4xl font-semibold'>Nossos Lideres</h2>
+          <p className='text-lg leading-relaxed m-4 text-orange-500'>
+            Nunca houve, nem nunca haverá, um líder maior e tão perfeito quanto
+            o nosso Senhor. Apenas buscamos ser cada dia mais parecidos com Ele
+            e fortalecer sua Igreja em Seu Caminho.
+          </p>
+        </div>
+      </div>
+      <div className='flex flex-wrap justify-center'>
+        <div className='w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4'>
+          <div className='px-6 flex flex-col items-center'>
+            <NextImage
+              alt='Foto de perfil para Levi Queiros'
+              src='/img/members/levi.jpg'
+              imgClassName='shadow-lg rounded-full mx-auto max-w-120-px'
+              height={160}
+              width={160}
+            />
+            <div className='pt-6 text-center'>
+              <h5 className='text-xl font-bold'>Levi Queiroz</h5>
+              <p className='mt-1 text-sm text-slate-400 uppercase font-semibold'>
+                Pastor
+              </p>
+              <div className='mt-2 flex items-center justify-center'>
+                <NextLink
+                  title='@leviqueiroz_'
+                  uri='https://twitter.com/leviqueiroz_'
+                  className={clsxm(
+                    'w-10 h-10 m-1',
+                    'bg-gray-200 text-orange-500',
+                    'flex items-center justify-center',
+                    'rounded-full outline-none focus:outline-none',
+                    'hover:bg-sky-400 hover:text-white'
+                  )}
+                >
+                  <TwitterLogo size={26} />
+                </NextLink>
+                <NextLink
+                  title='@levy.queiroz'
+                  uri='https://www.facebook.com/levy.queiroz'
+                  className={clsxm(
+                    'w-10 h-10 m-1',
+                    'bg-gray-200 text-orange-500',
+                    'flex items-center justify-center',
+                    'rounded-full outline-none focus:outline-none',
+                    'hover:bg-sky-600 hover:text-white'
+                  )}
+                >
+                  <FacebookLogo size={32} />
+                </NextLink>
+                <NextLink
+                  title='@leviqueiroz_1'
+                  uri='https://www.instagram.com/leviqueiroz_1'
+                  className={clsxm(
+                    'w-10 h-10 m-1',
+                    'bg-gray-200 text-orange-500',
+                    'flex items-center justify-center',
+                    'rounded-full outline-none focus:outline-none',
+                    'hover:bg-slate-700 hover:text-white'
+                  )}
+                >
+                  <InstagramLogo size={32} />
+                </NextLink>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4'>
+          <div className='px-6 flex flex-col items-center'>
+            <NextImage
+              alt='Foto de perfil para Vitória Alves'
+              src='/img/members/vitoria.jpg'
+              imgClassName='shadow-lg rounded-full mx-auto max-w-120-px'
+              height={160}
+              width={160}
+            />
+            <div className='pt-6 text-center'>
+              <h5 className='text-xl font-bold'>Vitória Alves</h5>
+              <p className='mt-1 text-sm text-slate-400 uppercase font-semibold'>
+                Missionária
+              </p>
+              <div className='mt-2 flex items-center justify-center'>
+                <NextLink
+                  title='@vitoriaalvesvih'
+                  uri='https://twitter.com/vitoriaalvesvih'
+                  className={clsxm(
+                    'w-10 h-10 m-1',
+                    'bg-gray-200 text-orange-500',
+                    'flex items-center justify-center',
+                    'rounded-full outline-none focus:outline-none',
+                    'hover:bg-sky-400 hover:text-white'
+                  )}
+                >
+                  <TwitterLogo size={32} />
+                </NextLink>
+                <NextLink
+                  title='@vitoria.alves.1088'
+                  uri='https://www.facebook.com/vitoria.alves.1088'
+                  className={clsxm(
+                    'w-10 h-10 m-1',
+                    'bg-gray-200 text-orange-500',
+                    'flex items-center justify-center',
+                    'rounded-full outline-none focus:outline-none',
+                    'hover:bg-sky-600 hover:text-white'
+                  )}
+                >
+                  <FacebookLogo size={32} />
+                </NextLink>
+                <NextLink
+                  title='@vitoriaalves27_'
+                  uri='https://www.instagram.com/vitoriaalves27_'
+                  className={clsxm(
+                    'w-10 h-10 m-1',
+                    'bg-gray-200 text-orange-500',
+                    'flex items-center justify-center',
+                    'rounded-full outline-none focus:outline-none',
+                    'hover:bg-slate-700 hover:text-white'
+                  )}
+                >
+                  <InstagramLogo size={32} />
+                </NextLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 const SectionAbout = () => (
   <section className='w-full py-20 bg-slate-600 overflow-hidden'>
@@ -166,10 +310,7 @@ const SectionContact = () => (
                 />
               </div>
               <div className='text-center mt-6'>
-                <button
-                  className='bg-slate-800 text-white active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'
-                  type='button'
-                >
+                <button className='bg-slate-800 text-white active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'>
                   Enviar
                 </button>
               </div>
